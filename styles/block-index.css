@@ -1,0 +1,135 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    margin: 0px;
+    overflow: hidden;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    /* letter-spacing: -4px; */
+    font-size: clamp(2.3rem, 1vw, 1rem);
+    padding: 0rem clamp(1rem, 2vw, 2rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+
+
+#wrapper {
+    /* color: white; */
+    aspect-ratio: 1.618;
+    width: 100vmin;
+    position: relative;
+}
+
+#wrapper > .rect {
+    /* background-color: black; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 80%;
+
+    transition: left, top, height, width, border-radius;
+    transition-duration: 750ms;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+#wrapper > .rect:nth-child(1) {  
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    letter-spacing: -7px;
+
+    color: #fdfcdc;
+    background-color: #0081a7;
+    /* color: #D88C9A;
+    background-color: #99C1B9; */
+}
+
+#wrapper > .rect:nth-child(2) {  
+    left: 25%;
+    top: 0%;
+    height: 70%;
+    width: 25%;
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: -7px;
+
+    color: #fed9b7;
+    background-color: #00afb9;
+    /* color: #F2D0A9;
+    background-color: #8E7DBE; */
+}
+
+#wrapper > .rect:nth-child(3) {  
+    left: 25%;
+    top: 70%;
+    height: 30%;
+    width: 50%;
+    position: absolute;
+
+    color: #0081a7;
+    background-color: #fdfcdc;
+    /* color: #99C1B9;
+    background-color: #D88C9A; */
+}
+
+#wrapper > .rect:nth-child(4) {  
+    left: 50%;
+    top: 0%;
+    height: 70%;
+    width: 50%;
+    position: absolute;
+    font-size: clamp(3rem, 10vw, 10rem);
+    
+    color: #00afb9;
+    background-color: #fed9b7;
+    /* color: #8E7DBE;
+    background-color: #F2D0A9; */
+}
+
+#wrapper > .rect:nth-child(5) {  
+    left: 75%;
+    top: 70%;
+    height: 30%;
+    width: 25%;
+    position: absolute;
+
+    color: white;
+    background-color: #f07167;
+    /* color: #D88C9A;
+    background-color: #F1E3D3; */
+}
+
+#wrapper > .rect[state="0"] {
+    visibility: visible;
+}
+
+#wrapper > .rect[state="1"] {  
+    visibility: visible;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    writing-mode: horizontal-tb;
+    letter-spacing: normal;
+}
+
+#wrapper > .rect[state="2"] { 
+    visibility: hidden;
+}
+
+a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}

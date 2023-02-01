@@ -1,0 +1,7 @@
+a > img {
+    height: 50px;
+    width: 50px;
+    position:absolute;
+    cursor: pointer;
+    line-height: 5.1rem;
+}
