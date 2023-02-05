@@ -1,20 +1,28 @@
+html,
 body {
-    height: 100vh;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+/* the grid */
+
+#frame {
+    left: 0%;
+    top: 0%;
+    height: 95vh;
     width: 100vw;
     display: grid;
     place-items: center;
     background-color: black;
-    margin: 0px;
-    overflow: hidden;
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Mono', monospace;
     font-weight: 800;
-    /* letter-spacing: -4px; */
     font-size: clamp(2.3rem, 1vw, 1rem);
-    padding: 0rem clamp(1rem, 2vw, 2rem);
-    border-radius: clamp(0.4rem, 0.75vw, 1rem);
-}
 
+    overflow: hidden;
+    /* letter-spacing: -4px; */
+    /* padding: 0rem clamp(1rem, 2vw, 2rem); */
+}
 
 #wrapper {
     /* color: white; */
@@ -23,7 +31,7 @@ body {
     position: relative;
 }
 
-#wrapper > .rect {
+#wrapper>.rect {
     /* background-color: black; */
     overflow: hidden;
     display: flex;
@@ -33,19 +41,20 @@ body {
 
     transition: left, top, height, width, border-radius;
     transition-duration: 750ms;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in;
     cursor: pointer;
+
+    position: absolute;
 }
 
-#wrapper > .rect:nth-child(1) {  
+#wrapper>.rect:nth-child(1) {
     writing-mode: vertical-rl;
     text-orientation: upright;
     left: 0%;
     top: 0%;
     height: 100%;
     width: 25%;
-    position: absolute;
-    letter-spacing: -7px;
+    letter-spacing: -18px;
 
     color: #fdfcdc;
     background-color: #0081a7;
@@ -53,15 +62,14 @@ body {
     background-color: #99C1B9; */
 }
 
-#wrapper > .rect:nth-child(2) {  
+#wrapper>.rect:nth-child(2) {
     left: 25%;
     top: 0%;
     height: 70%;
     width: 25%;
-    position: absolute;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    letter-spacing: -7px;
+    letter-spacing: -18px;
 
     color: #fed9b7;
     background-color: #00afb9;
@@ -69,12 +77,11 @@ body {
     background-color: #8E7DBE; */
 }
 
-#wrapper > .rect:nth-child(3) {  
+#wrapper>.rect:nth-child(3) {
     left: 25%;
     top: 70%;
     height: 30%;
     width: 50%;
-    position: absolute;
 
     color: #0081a7;
     background-color: #fdfcdc;
@@ -82,26 +89,24 @@ body {
     background-color: #D88C9A; */
 }
 
-#wrapper > .rect:nth-child(4) {  
+#wrapper>.rect:nth-child(4) {
     left: 50%;
     top: 0%;
     height: 70%;
-    width: 50%;
-    position: absolute;
+    width: 49.9%;
     font-size: clamp(3rem, 10vw, 10rem);
-    
+
     color: #00afb9;
     background-color: #fed9b7;
     /* color: #8E7DBE;
     background-color: #F2D0A9; */
 }
 
-#wrapper > .rect:nth-child(5) {  
+#wrapper>.rect:nth-child(5) {
     left: 75%;
     top: 70%;
     height: 30%;
-    width: 25%;
-    position: absolute;
+    width: 24.9%;
 
     color: white;
     background-color: #f07167;
@@ -109,11 +114,11 @@ body {
     background-color: #F1E3D3; */
 }
 
-#wrapper > .rect[state="0"] {
+#wrapper>.rect[state="0"] {
     visibility: visible;
 }
 
-#wrapper > .rect[state="1"] {  
+#wrapper>.rect[state="1"] {
     visibility: visible;
     left: 0%;
     top: 0%;
@@ -123,13 +128,6 @@ body {
     letter-spacing: normal;
 }
 
-#wrapper > .rect[state="2"] { 
+#wrapper>.rect[state="2"] {
     visibility: hidden;
-}
-
-a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
 }

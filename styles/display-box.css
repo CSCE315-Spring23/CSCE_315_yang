@@ -1,0 +1,10 @@
+#two-col {
+    border: 1px solid white; 
+    width: 80%;
+    display:flex;
+}
+
+#two-col > .col {
+    flex: 1;
+    border: 1px solid white;
+}

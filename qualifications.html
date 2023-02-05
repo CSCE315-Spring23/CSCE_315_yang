@@ -2,26 +2,56 @@
 
 <head>
     <title>Qualifications</title>
-    <link rel="stylesheet" href="styles/qualifications.css">
+    <link rel="stylesheet" href="styles/block.css">
+    <link rel="stylesheet" href="styles/terminal.css">
+    <script src="scripts/block.js"></script>
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <h1>
-        My Qualifications
-    </h1>
-    <p>
-        Caption...
-    </p>
+    <div id="topnav">
+        <a href=".">Home</a>
+        <div style="float: right;">
+            <a>
+                <label id="switch" style="float: right;">
+                    <input type="checkbox" id="theme-switch-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </a>
+        </div>
+    </div>
     <div id="body">
         <div class="left col">
-            <iframe src="media/Eric_Yang_Resume.pdf" width="100%" height="100%"></iframe>
-        </div>
-        <div class="right col">
+            <h1>Qualifications</h1>
+
+            <a href="media/Eric_Yang_Resume.pdf" class="button">RESUME</a>
+
+            <h2 style="padding-top: 4%;">Interests</h2>
+            <!-- Interests window -->
             <section class="window">
                 <div class="bar">
                     <div class="btn"></div>
                 </div>
-                <div class="body">
-                    <pre><div class="comment"># run this command:</div><div class="prompt">$ <span class="command">echo hi</span></div><div class="prompt">hi</div><div class="prompt">$ <span class="pulse">_</span></div></pre>
+                <div class="window-content">
+                    <pre><div class="comment">// Interests </div> <div><mark class="var">interests</mark> = <mark class="curly">{</mark></div><div><mark class="key">    "software_engineering"</mark>: <mark class="bracket">[</mark>"modern powerful toolkit", 
+                "rapid building and production",
+                "seas of knowledge to explore"<mark class="bracket">]</mark>,</div><div>    <mark class="key">"data_science"</mark>: "art of uncovering insights", </div><div>    <mark class="key">"cybersecurity"</mark>: "As the world becomes more digitalized,"\ 
+                "proper precaution must be taken"\
+                "to ensure the the privacy and safety"\
+                "of the systems the entire world relies on."\
+                "Besides, breaking programs is fun!"</div><mark class="curly">}</mark></pre>
+                </div>
+            </section>
+
+
+            <h2>Skills</h2>
+            <!-- Skills windows -->
+            <section class="window">
+                <div class="bar">
+                    <div class="btn"></div>
+                </div>
+                <div class="window-content">
+                    <pre><div class="comment">// Programming</div> <div>Python</div><div>C++</div><div>SQL</div><div>Java</div><div>JavaScript</div><div>HTML CSS</div> <div class="comment">// Libraries</div> <div>NumPy</div><div>PANDAS</div><div>TensorFlow</div><div>scikit-learn</div><div>Matplotlib</div></pre>
                 </div>
             </section>
 
@@ -29,10 +59,37 @@
                 <div class="bar">
                     <div class="btn"></div>
                 </div>
-                <div class="body">
-                    <pre><div class="comment"># run this command:</div><div class="prompt">$ <span class="command">echo hi</span></div><div class="prompt">hi</div><div class="prompt">$ <span class="pulse">_</span></div></pre>
+                <div class="window-content">
+                    <pre><div class="comment">// Tools</div> <div>Git</div><div>Linux</div><div>Snowflake</div><div>PowerBI</div></pre>
                 </div>
             </section>
+            <section class="window">
+                <div class="bar">
+                    <div class="btn"></div>
+                </div>
+                <div class="window-content">
+                    <pre><div class="comment">// Others </div> <div>Quick to Learn</div><div>Technical Writing</div><div>Collaboration</div></pre>
+                </div>
+            </section>
+
+        </div>
+        <div class="right col" id="background">
+            <p class="wall"><span>LOADING</span></p>
+            <p style="margin-left: -0.5em;" class="wall">FPLNZY</p>
+            <p class="wall">RFSTBM</p>
+            <p style="margin-left: -0.5em;" class="wall">ESDPJO</p>
+            <p class="wall">JKTXHG</p>
+            <p style="margin-left: -0.5em;" class="wall">VCTBQZ</p>
+            <p class="wall">JKTXHG</p>
+            <p style="margin-left: -0.5em;" class="wall">QUWVIP</p>
+            <p class="wall">RFSTBM</p>
+            <p style="margin-left: -0.5em;" class="wall">BTAWHR</p>
+            <p class="wall">GSDMOX</p>
+            <p style="margin-left: -0.5em;" class="wall">ZKJOEM</p>
+            <p class="wall">RWQNIH</p>
+            <p style="margin-left: -0.5em;" class="wall">YJVBLF</p>
+            <p class="wall">HCPVNT</p>
         </div>
     </div>
+    <!-- https://codepen.io/jamesduncombe/pen/QNMapK -->
 </body>

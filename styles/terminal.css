@@ -1,28 +1,9 @@
-#body {
-    /* centering box with rounded corners */
-    width: 80%;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-h1 {
-    color: #506479;
-    font-size: 2.4rem;
-    text-align: center;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    line-height: 1;
-}
-
-p {
-    text-align: center;
-    margin-bottom: 2rem;
-}
+/* terminal window */
 
 .window {
     width: 80%;
     margin: 0 auto 2rem;
+    margin-top: 2rem;
     box-shadow: 0 0.25rem 0.5rem #12181e;
     border-radius: 0 0 0.1rem 0.1rem;
 }
@@ -33,6 +14,13 @@ p {
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
+.btn {
+    background: #f6b73e;
+    position: relative;
+    margin-left: 38px;
+    top: 12px;
+}
+
 .btn::before,
 .btn::after,
 .btn {
@@ -40,13 +28,6 @@ p {
     height: 12px;
     border-radius: 100%;
     display: block;
-}
-
-.btn {
-    background: #f6b73e;
-    position: relative;
-    margin-left: 38px;
-    top: 12px;
 }
 
 .btn::before,
@@ -65,21 +46,31 @@ p {
     margin-left: 20px;
 }
 
-.body {
-    height: 10rem;
+.window-content {
     background: #232323;
     padding: 18px;
 }
 
-.column {
-    flex: 50%;
+.comment {
+    opacity: .5;
 }
 
-
-.left {
-    width: 70%;
+.window-content .var {
+    color: #0081a7;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.right {
-    width: 40%;
+.window-content .key {
+    color: #f07167;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.window-content .bracket {
+    color: #fed9b7;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.window-content .curly {
+    color: #00afb9;
+    background-color: rgba(0, 0, 0, 0);
 }
