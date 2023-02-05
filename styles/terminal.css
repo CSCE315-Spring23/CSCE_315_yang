@@ -1,4 +1,5 @@
 /* terminal window */
+/* https://codepen.io/jamesduncombe/pen/QNMapK */
 
 .window {
     width: 80%;
@@ -48,7 +49,7 @@
 
 .window-content {
     background: #232323;
-    padding: 18px;
+    padding: 20px;
 }
 
 .comment {
