@@ -13,6 +13,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     background-attachment: fixed;
+    background-size: 100vw, auto;
     font-family: 'Kalam', cursive;
 }
 
@@ -21,7 +22,23 @@ body#index {
 }
 
 body#portfolio{
+    background-image: url("../media/images/cloud2.jpg");
+}
+
+body#about{
+    background-image: url("../media/images/cloud5.jpg");
+}
+
+body#chat-gpt{
+    background-image: url("../media/images/cloud3.jpg");
+}
+
+body#qualifications{
     background-image: url("../media/images/cloud1.jpg");
+}
+
+body#service{
+    background-image: url("../media/images/cloud5.jpg");
 }
 
 body > #blank {
@@ -131,3 +148,16 @@ input:checked+.slider:before {
     display: none;
     visibility: hidden;
 }
+
+#body {
+    display: flex;
+    justify-content: center;
+}
+
+.left.col {
+    margin-top: -14em;
+    width: 80em;
+    border-radius: 16px;
+    background-color: white;
+}
+
