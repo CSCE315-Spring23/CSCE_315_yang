@@ -1,175 +1,91 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link id="mainCSS" rel="stylesheet" href="styles/block.css">
-        <script src="scripts/theme.js"></script>
-        <title>Chat-GPT Generated</title>
+        <title>Eric Yang - Software Development</title>
         <style>
-      /* Add styles here */
-      header {
+      body {
+        background-color: #B3D6C6;
+        font-family: Arial, sans-serif;
         text-align: center;
       }
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        color: white;
+      h1 {
+        color: #75B9BE;
       }
       .container {
         max-width: 800px;
         margin: 0 auto;
-        padding: 20px;
-        text-align: center;
+        text-align: left;
+        padding: 50px;
+        background-color: #DCEAB2;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #C7D66D;
       }
-      h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
+      .tech-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
       }
-      p {
-        font-size: 18px;
-        margin-bottom: 20px;
-        line-height: 1.5;
+      code {
+        background-color: #A8CCC9;
+        padding: 10px;
+        border-radius: 5px;
       }
-      .highlight {
-        font-weight: bold;
+      .back-button {
+        background-color: #75B9BE;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+        display: inline-block;
       }
     </style>
     </head>
-    <body id="chat-gpt">
-        <div id="topnav">
-            <a href=".">Home</a>
-            <div>
-                <a>
-                    <label id="switch">
-                        <input type="checkbox" onclick="switchTheme()" id="theme-switch-toggle">
-                        <span class="slider round"></span>
-                    </label>
-                </a>
-            </div>
-        </div>
-        <header>
-            <h1>Professional Presence Website</h1>
-            <p>Welcome to my professional presence website, showcasing my
-                experience and skills in the fields of computer science, data
-                science, and cybersecurity. </p>
-        </header>
+    <body>
+        <h1>Eric Yang</h1>
+        <p>Computer Science Major, Class of 2025 at Texas A&M University</p>
         <div class="container">
-            <h1>Computer Science Student</h1>
-            <p>Sixty-seven thousand users and counting. What I originally
-                envisioned as just a casual summer Discord bot project for
-                collecting characters from shows in a trading card fashion,
-                garnered more attention than what me and the team I led
-                could
-                ever expected.</p>
-            <p>I love to build, to create, to make something my very own
-                from
-                nothing. I have loved the craft of engineering since the
-                times I
-                could pick up a wooden block. Throughout my experiences with
-                drag-and-drop programming as a child and more powerful
-                programming languages like Java and Python, I have found
-                that
-                Computer Science is the most accessible way to engineering
-                projects in our modern world. Regardless of identity,
-                status, or
-                environment, an internet connection unlocks access to the
-                world's most powerful toolkit.</p>
-            <p>Now, I am pursuing a bachelor's degree in Computer Science at
-                Texas A&M to advance my current mostly self-taught
-                understanding
-                and go on to build bigger and better projects. Specifically
-                within Computer Science, I am interested in Data Science and
-                Cybersecurity. I have completed my third semester with
-                a
-                4.0/4.0 GPA in the Engineering Honors Program.</p>
-            <p class="highlight">Highlight of Experiences:</p>
+            <h2>Education</h2>
+            <p>I am currently studying computer science at Texas A&M University
+                and have taken the following courses:</p>
             <ul>
-                <li>Published a scientific peer-reviewed paper in the
-                    journal
-                    Solar Energy that detailed the transformation of the
-                    solar
-                    cell material double perovskite to halve the costs of
-                    solar
-                    panels and entirely eliminate toxic byproduct production</li>
-                <li>Designed an AI model that predicts computational fluid
-                    dynamic simulations set-up which would cut back
-                    thousands of
-                    dollars and hours for training. Research paper currently
-                    under review.</li>
-                <li>Assembled sample machine learning model and standardized
-                    benchmarks at MSBAI that was responsible for a critical
-                    part
-                    of developing the AI agent GURU. This service was later
-                    selected by the U.S. Air Force for the $1 million
-                    contract
-                    AFWERX Small Business Innovation Research Phase II
-                    Contract.</li>
-                <li>Conducted and cleanly compiled thorough, efficient, and
-                    timely due diligence research at MicroVentures which
-                    supported many successful offerings on the platform such
-                    as
-                    Sila Nanotechnologies which raised $655 thousand within
-                    24
-                    hours.</li>
+                <li>CSCE 121</li>
+                <li>CSCE 221</li>
+                <li>CSCE 222</li>
+                <li>CSCE 314</li>
             </ul>
-            <p>I am currently seeking an internship for summer of 2023 in
-                the
-                fields software engineering, data science, or cybersecurity.
-            </p>
-            <p>Feel free to contact me at <a
-                    href="mailto:eric@erichyang.dev">email</a>
-            </p>
+            <h2>Skills</h2>
+            <p>My favorite programming language is Python, but I am also
+                proficient in C++ and Java.</p>
+            <img class="tech-img" src="https://picsum.photos/800/300"
+                alt="Random Technology Image">
+            <h2>Code Example</h2>
+            <p>Here is a sample code block to showcase my skills:</p>
+            <code>
+                print("Hello, World!")
+            </code>
         </div>
+        <h1>Chat-GPT Prompt</h1>
+        <div class="container">
+            <p>
+                create an html css website that highlights my experiences and
+                how I would fit into a development team. Use 75B9BE A8CCC9
+                B3D6C6 DCEAB2 C7D66D as the color scheme.
 
-        <div>
-            <h1>Prompt:</h1>
-            <p>Please generate a fully responsive professional presence website
-                using html and css based on the
-                following: Sixty-seven thousand users and counting. What I
-                originally envisioned as just a casual summer Discord bot
-                project for collecting characters from shows in a trading
-                card fashion, garnered more attention than what me and the
-                team I led could ever expected.
-                I love to build, to create, to make something my very own
-                from nothing. I have loved the craft of engineering since
-                the times I could pick up a wooden block. Throughout my
-                experiences with drag-and-drop programming as a child and
-                more powerful programming languages like Java and Python, I
-                have found that Computer Science is the most accessible way
-                to engineering projects in our modern world. Regardless of
-                identity, status, or environment, an internet connection
-                unlocks access to the world's most powerful toolkit.
-                Now, I am pursuing a bachelor's degree in Computer Science
-                at Texas A&M to advance my current mostly self-taught
-                understanding and go on to build bigger and better projects.
-                Specifically within Computer Science, I am interested in
-                Data Science and Cybersecurity. I have completed my
-                third semester with a 4.0/4.0 GPA in the Engineering Honors
-                Program.
-                Highlight of Experiences: Published a scientific
-                peer-reviewed paper in the journal Solar Energy that
-                detailed the transformation of the solar cell material
-                double perovskite to halve the costs of solar panels and
-                entirely eliminate toxic byproduct production
-                Designed an AI model that predicts computational fluid
-                dynamic simulations set-up which would cut back thousands of
-                dollars and hours for training. Research paper currently
-                under review. Assembled sample machine learning model and
-                standardized benchmarks at MSBAI that was responsible for a
-                critical part of developing the AI agent GURU. This service
-                was later selected by the U.S. Air Force for the $1 million
-                contract AFWERX Small Business Innovation Research Phase II
-                Contract. Conducted and cleanly compiled thorough,
-                efficient, and timely due diligence research at
-                MicroVentures which supported many successful offerings on
-                the platform such as Sila Nanotechnologies which raised $655
-                thousand within 24 hours. I am currently seeking an
-                internship for summer of 2023 in the fields software
-                engineering, data science, or cybersecurity. Please let me
-                know if I could be a potential candidate! I would love to
-                chat in greater detail. </p>
+                My name is Eric Yang
+                I am a class of 2025 Computer Science Major at Texas A&M
+                University
+                I have taken the courses CSCE 121 CSCE 221 CSCE 222 CSCE 314
+                My favorite programming language is Python but I am also very
+                familiar with C++ Java
+                Please include a code block embed at the bottom for me to insert
+                a paragraph
+
+                please also add a random tech image to showcase how familiar I
+                am with technology. Thanks!
+
+                please include a back button that would lead to "."
+            </p>
         </div>
+        <a href="." class="back-button">Back</a>
     </body>
 </html>
