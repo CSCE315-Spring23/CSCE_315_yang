@@ -2,18 +2,19 @@
 
 <head>
     <title>Qualifications</title>
-    <link rel="stylesheet" href="styles/block.css">
+    <link id="mainCSS" rel="stylesheet" href="styles/block.css">
     <script src="scripts/block.js"></script>
+    <script src="scripts/theme.js"></script>
     <link rel="icon" href="media/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <div id="topnav">
         <a href=".">Home</a>
-        <div style="float: right;">
+        <div>
             <a>
-                <label id="switch" style="float: right;">
-                    <input type="checkbox" id="theme-switch-toggle">
+                <label id="switch">
+                    <input type="checkbox" onclick="switchTheme()" id="theme-switch-toggle">
                     <span class="slider round"></span>
                 </label>
             </a>
@@ -22,13 +23,13 @@
     <div id="body">
         <div class="left col">
             <h1>Service</h1>
-            <div style="width: 80%;">
+            <div id="paragraph">
 
                 <div>
                     <h2>
                         <strong>Cybersecurity Club</strong>
                     </h2>
-                    <h3 style="margin-top: -2.5%; opacity: .8;">SEP 2021 -
+                    <h3 class="subheading">SEP 2021 -
                         Present</h3>
                     <p>
                         I have been contributing to the officer group of the
@@ -43,7 +44,7 @@
                     <h2>
                         <strong>CodePath</strong>
                     </h2>
-                    <h3 style="margin-top: -2.5%; opacity: .8;">NOV 2021 - MAR
+                    <h3 class="subheading">NOV 2021 - MAR
                         2022</h3>
                     <p>
                         I was a CodePath Tech Fellow for Texas A&M University.
@@ -64,7 +65,7 @@
                     <h2>
                         <strong>Junior High Coding Club</strong>
                     </h2>
-                    <h3 style="margin-top: -2.5%; opacity: .8;">SEP 2018 - MAY
+                    <h3 class="subheading">SEP 2018 - MAY
                         2020</h3>
                     <p>
                         I co-founded the club and gathered high school students
@@ -79,11 +80,13 @@
         </div>
         <div class="right col" id="background">
             <p class="wall"><span>LOADING</span></p>
-            <p style="margin-left: -0.5em;" class="wall">FPLNZY</p>
+            <p class="alt wall">FPLNZY</p>
             <p class="wall">RFSTBM</p>
-            <p style="margin-left: -0.5em;" class="wall">ESDPJO</p>
+            <p class="alt wall">ESDPJO</p>
             <p class="wall">JKTXHG</p>
-            <p style="margin-left: -0.5em;" class="wall">VCTBQZ</p>
+            <p class="alt wall">VCTBQZ</p>
+            <p class="wall">WUPHGN</p>
+            <p class="alt wall">LAYSHU</p>
         </div>
     </div>
 </body>

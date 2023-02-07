@@ -19,6 +19,10 @@ body {
     z-index: 5;
 }
 
+#topnav a#active{
+    background-color: #0081a7;
+}
+
 #topnav a {
     float: left;
     color: #f2f2f2;
@@ -30,6 +34,10 @@ body {
 #topnav a:hover {
     background-color: #fed9b7;
     color: black;
+}
+
+#topnav div {
+    float: right;
 }
 
 .sticky {
@@ -46,10 +54,11 @@ body {
 /* the switch */
 #switch {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     width: 40px;
     height: 23px;
     padding: 3px;
+    float: right;
 }
 
 #switch input {
@@ -125,12 +134,10 @@ input:checked+.slider:before {
     align-items: center;
     /* margin: 0rem; */
 
-    /* make the right side border white */
+    /* make the right side border white for column divider*/
     border-right-style: solid;
     border-right-color: white;
 }
-
-/* make the h3 title be left justified */
 
 .left h3 {
     text-align: left;
@@ -158,6 +165,10 @@ input:checked+.slider:before {
     opacity: 0.75;
     text-shadow: 10px 5px 5px rgba(102, 102, 102, 0.75);
     line-height: 1;
+}
+
+.right>.wall.alt {
+    margin-left: -0.5em;
 }
 
 h1 {
@@ -188,4 +199,58 @@ h1 {
 .left.col a:hover {
     background-color: white;
     color: black;
+}
+
+#socials {
+    display: flex;
+}
+
+#paragraph {
+    width: 80%;
+}
+
+.subheading {
+    margin-top: -2.5%; 
+    opacity: .8;
+}
+
+.box.special li,p{
+    text-align: left;
+}
+
+#two-col {
+    width: 90%;
+}
+
+#two-col > .col {
+    flex: 1;
+}
+
+.box.special {
+    text-align: center;
+}
+
+.box {
+    background-color: #232323;
+    border-radius: 6px;
+    box-shadow: 0 2px 0 0 #e5e5e5;
+    margin: 0 0 2em 0;
+    padding: 3em;
+}
+
+section {
+    display: block;
+    border: 0;
+    color: white;
+    letter-spacing: -0.015em;
+}
+
+.box .image.featured img {
+    border-radius: 6px 6px 0 0;
+    width: 45em;
+    object-fit: cover;
+}
+
+.actions.special {
+    list-style-type: none;
 }

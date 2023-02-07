@@ -3,13 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Chat-GPT Generated</title>
-            <style>
+        <link id="mainCSS" rel="stylesheet" href="styles/block.css">
+        <script src="scripts/theme.js"></script>
+        <title>Chat-GPT Generated</title>
+        <style>
       /* Add styles here */
+      header {
+        text-align: center;
+      }
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        color: white;
       }
       .container {
         max-width: 800px;
@@ -30,122 +36,140 @@
         font-weight: bold;
       }
     </style>
-        </head>
-        <body>
-            <div class="container">
-                <h1>Computer Science Student</h1>
-                <p>Sixty-four thousand users and counting. What I originally
-                    envisioned as just a casual summer Discord bot project for
-                    collecting characters from shows in a trading card fashion,
-                    garnered more attention than what me and the team I led
-                    could
-                    ever expected.</p>
-                <p>I love to build, to create, to make something my very own
-                    from
-                    nothing. I have loved the craft of engineering since the
-                    times I
-                    could pick up a wooden block. Throughout my experiences with
-                    drag-and-drop programming as a child and more powerful
-                    programming languages like Java and Python, I have found
-                    that
-                    Computer Science is the most accessible way to engineering
-                    projects in our modern world. Regardless of identity,
-                    status, or
-                    environment, an internet connection unlocks access to the
-                    world's most powerful toolkit.</p>
-                <p>Now, I am pursuing a bachelor's degree in Computer Science at
-                    Texas A&M to advance my current mostly self-taught
-                    understanding
-                    and go on to build bigger and better projects. Specifically
-                    within Computer Science, I am interested in Data Science and
-                    Cybersecurity. I have just completed my first semester with
-                    a
-                    4.0/4.0 GPA in the Engineering Honors Program.</p>
-                <p class="highlight">Highlight of Experiences:</p>
-                <ul>
-                    <li>Published a scientific peer-reviewed paper in the
-                        journal
-                        Solar Energy that detailed the transformation of the
-                        solar
-                        cell material double perovskite to halve the costs of
-                        solar
-                        panels and entirely eliminate toxic byproduct production</li>
-                    <li>Designed an AI model that predicts computational fluid
-                        dynamic simulations set-up which would cut back
-                        thousands of
-                        dollars and hours for training. Research paper currently
-                        under review.</li>
-                    <li>Assembled sample machine learning model and standardized
-                        benchmarks at MSBAI that was responsible for a critical
-                        part
-                        of developing the AI agent GURU. This service was later
-                        selected by the U.S. Air Force for the $1 million
-                        contract
-                        AFWERX Small Business Innovation Research Phase II
-                        Contract.</li>
-                    <li>Conducted and cleanly compiled thorough, efficient, and
-                        timely due diligence research at MicroVentures which
-                        supported many successful offerings on the platform such
-                        as
-                        Sila Nanotechnologies which raised $655 thousand within
-                        24
-                        hours.</li>
-                </ul>
-                <p>I am currently seeking an internship for summer of 2023 in
-                    the
-                    fields software engineering, data science, or cybersecurity.
-                </p>
-                <p>Feel free to contact me at <a
-                        href="mailto:eric@erichyang.dev">email</a>
-                </p>
-            </div>
-
+    </head>
+    <body>
+        <div id="topnav">
+            <a href=".">Home</a>
             <div>
-                <h1>Prompt:</h1>
-                <p>Please generate a fully responsive html and css based on the
-                    following: Sixty-four thousand users and counting. What I
-                    originally envisioned as just a casual summer Discord bot
-                    project for collecting characters from shows in a trading
-                    card fashion, garnered more attention than what me and the
-                    team I led could ever expected.
-                    I love to build, to create, to make something my very own
-                    from nothing. I have loved the craft of engineering since
-                    the times I could pick up a wooden block. Throughout my
-                    experiences with drag-and-drop programming as a child and
-                    more powerful programming languages like Java and Python, I
-                    have found that Computer Science is the most accessible way
-                    to engineering projects in our modern world. Regardless of
-                    identity, status, or environment, an internet connection
-                    unlocks access to the world's most powerful toolkit.
-                    Now, I am pursuing a bachelor's degree in Computer Science
-                    at Texas A&M to advance my current mostly self-taught
-                    understanding and go on to build bigger and better projects.
-                    Specifically within Computer Science, I am interested in
-                    Data Science and Cybersecurity. I have just completed my
-                    first semester with a 4.0/4.0 GPA in the Engineering Honors
-                    Program.
-                    Highlight of Experiences: Published a scientific
-                    peer-reviewed paper in the journal Solar Energy that
-                    detailed the transformation of the solar cell material
-                    double perovskite to halve the costs of solar panels and
-                    entirely eliminate toxic byproduct production
-                    Designed an AI model that predicts computational fluid
-                    dynamic simulations set-up which would cut back thousands of
-                    dollars and hours for training. Research paper currently
-                    under review. Assembled sample machine learning model and
-                    standardized benchmarks at MSBAI that was responsible for a
-                    critical part of developing the AI agent GURU. This service
-                    was later selected by the U.S. Air Force for the $1 million
-                    contract AFWERX Small Business Innovation Research Phase II
-                    Contract. Conducted and cleanly compiled thorough,
-                    efficient, and timely due diligence research at
-                    MicroVentures which supported many successful offerings on
-                    the platform such as Sila Nanotechnologies which raised $655
-                    thousand within 24 hours. I am currently seeking an
-                    internship for summer of 2023 in the fields software
-                    engineering, data science, or cybersecurity. Please let me
-                    know if I could be a potential candidate! I would love to
-                    chat in greater detail. </p>
+                <a>
+                    <label id="switch">
+                        <input type="checkbox" onclick="switchTheme()" id="theme-switch-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </a>
             </div>
-        </body>
-    </html>
+        </div>
+        <header>
+            <h1>Professional Presence Website</h1>
+            <p>Welcome to my professional presence website, showcasing my
+                experience and skills in the fields of computer science, data
+                science, and cybersecurity. </p>
+        </header>
+        <div class="container">
+            <h1>Computer Science Student</h1>
+            <p>Sixty-seven thousand users and counting. What I originally
+                envisioned as just a casual summer Discord bot project for
+                collecting characters from shows in a trading card fashion,
+                garnered more attention than what me and the team I led
+                could
+                ever expected.</p>
+            <p>I love to build, to create, to make something my very own
+                from
+                nothing. I have loved the craft of engineering since the
+                times I
+                could pick up a wooden block. Throughout my experiences with
+                drag-and-drop programming as a child and more powerful
+                programming languages like Java and Python, I have found
+                that
+                Computer Science is the most accessible way to engineering
+                projects in our modern world. Regardless of identity,
+                status, or
+                environment, an internet connection unlocks access to the
+                world's most powerful toolkit.</p>
+            <p>Now, I am pursuing a bachelor's degree in Computer Science at
+                Texas A&M to advance my current mostly self-taught
+                understanding
+                and go on to build bigger and better projects. Specifically
+                within Computer Science, I am interested in Data Science and
+                Cybersecurity. I have completed my third semester with
+                a
+                4.0/4.0 GPA in the Engineering Honors Program.</p>
+            <p class="highlight">Highlight of Experiences:</p>
+            <ul>
+                <li>Published a scientific peer-reviewed paper in the
+                    journal
+                    Solar Energy that detailed the transformation of the
+                    solar
+                    cell material double perovskite to halve the costs of
+                    solar
+                    panels and entirely eliminate toxic byproduct production</li>
+                <li>Designed an AI model that predicts computational fluid
+                    dynamic simulations set-up which would cut back
+                    thousands of
+                    dollars and hours for training. Research paper currently
+                    under review.</li>
+                <li>Assembled sample machine learning model and standardized
+                    benchmarks at MSBAI that was responsible for a critical
+                    part
+                    of developing the AI agent GURU. This service was later
+                    selected by the U.S. Air Force for the $1 million
+                    contract
+                    AFWERX Small Business Innovation Research Phase II
+                    Contract.</li>
+                <li>Conducted and cleanly compiled thorough, efficient, and
+                    timely due diligence research at MicroVentures which
+                    supported many successful offerings on the platform such
+                    as
+                    Sila Nanotechnologies which raised $655 thousand within
+                    24
+                    hours.</li>
+            </ul>
+            <p>I am currently seeking an internship for summer of 2023 in
+                the
+                fields software engineering, data science, or cybersecurity.
+            </p>
+            <p>Feel free to contact me at <a
+                    href="mailto:eric@erichyang.dev">email</a>
+            </p>
+        </div>
+
+        <div>
+            <h1>Prompt:</h1>
+            <p>Please generate a fully responsive professional presence website
+                using html and css based on the
+                following: Sixty-seven thousand users and counting. What I
+                originally envisioned as just a casual summer Discord bot
+                project for collecting characters from shows in a trading
+                card fashion, garnered more attention than what me and the
+                team I led could ever expected.
+                I love to build, to create, to make something my very own
+                from nothing. I have loved the craft of engineering since
+                the times I could pick up a wooden block. Throughout my
+                experiences with drag-and-drop programming as a child and
+                more powerful programming languages like Java and Python, I
+                have found that Computer Science is the most accessible way
+                to engineering projects in our modern world. Regardless of
+                identity, status, or environment, an internet connection
+                unlocks access to the world's most powerful toolkit.
+                Now, I am pursuing a bachelor's degree in Computer Science
+                at Texas A&M to advance my current mostly self-taught
+                understanding and go on to build bigger and better projects.
+                Specifically within Computer Science, I am interested in
+                Data Science and Cybersecurity. I have completed my
+                third semester with a 4.0/4.0 GPA in the Engineering Honors
+                Program.
+                Highlight of Experiences: Published a scientific
+                peer-reviewed paper in the journal Solar Energy that
+                detailed the transformation of the solar cell material
+                double perovskite to halve the costs of solar panels and
+                entirely eliminate toxic byproduct production
+                Designed an AI model that predicts computational fluid
+                dynamic simulations set-up which would cut back thousands of
+                dollars and hours for training. Research paper currently
+                under review. Assembled sample machine learning model and
+                standardized benchmarks at MSBAI that was responsible for a
+                critical part of developing the AI agent GURU. This service
+                was later selected by the U.S. Air Force for the $1 million
+                contract AFWERX Small Business Innovation Research Phase II
+                Contract. Conducted and cleanly compiled thorough,
+                efficient, and timely due diligence research at
+                MicroVentures which supported many successful offerings on
+                the platform such as Sila Nanotechnologies which raised $655
+                thousand within 24 hours. I am currently seeking an
+                internship for summer of 2023 in the fields software
+                engineering, data science, or cybersecurity. Please let me
+                know if I could be a potential candidate! I would love to
+                chat in greater detail. </p>
+        </div>
+    </body>
+</html>

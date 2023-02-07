@@ -1,0 +1,73 @@
+#frame {
+    width: 100vw;
+    height: 94vh;
+}
+
+#wrapper {
+    display: flex;
+}
+
+#wrapper>.rect {
+    font-size: x-large;
+    width: 20em;
+    height: 10em;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 1em;
+
+    /* allow arbitrary placing */
+    position: absolute;
+}
+
+#wrapper>.rect:hover {
+    cursor: pointer;
+}
+
+#wrapper>.rect:nth-child(1) {
+    left: 15%;
+    top: 15%;
+}
+
+#wrapper>.rect:nth-child(2) {
+    left: 15%;
+    top: 50%;
+}
+
+#wrapper>.rect:nth-child(3) {
+    left: 55%;
+    top: 15%;
+}
+
+#wrapper>.rect:nth-child(4) {
+    left: 35%;
+    top: 32.5%;
+}
+
+#wrapper>.rect:nth-child(5) {
+    left: 55%;
+    top: 50%;
+}
+
+#wrapper>.rect:nth-child(1):hover {
+    background-color: #75B9BE;
+}
+
+#wrapper>.rect:nth-child(2):hover {
+    background-color: #A8CCC9;
+}
+
+#wrapper>.rect:nth-child(3):hover {
+    background-color: #DCEAB2;
+}
+
+#wrapper>.rect:nth-child(4):hover {
+    background-color: #B3D6C6;
+}
+
+#wrapper>.rect:nth-child(5):hover {
+    background-color: #C7D66D;
+}

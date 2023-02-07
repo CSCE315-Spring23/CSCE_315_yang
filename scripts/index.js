@@ -1,16 +1,5 @@
 let mouse = false;
 
-// change themes
-const checkbox = document.getElementById('theme-switch-toggle')
-
-checkbox.addEventListener('change', (event) => {
-  if (event.currentTarget.checked) {
-    alert('checked');
-  } else {
-    alert('not checked');
-  }
-})
-
 // hover animation
 
 function emphasize(rect) {

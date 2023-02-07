@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+/* 
+75B9BE
+A8CCC9
+B3D6C6
+DCEAB2
+C7D66D
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    font-family: 'Kalam', cursive;
+}
+
+body#index {
+    background-image: url("../media/images/cloud0.jpg");
+}
+
+body#portfolio{
+    background-image: url("../media/images/cloud1.jpg");
+}
+
+body > #blank {
+    height: 50vh;
+}
+
+body > #body {
+    background-color: #e5e5e5;
+}
+
+/* nav bar */
+#topnav {
+    background-color: #75B9BE;
+    overflow: hidden;
+}
+
+#topnav a#active{
+    background-color: #C7D66D;
+}
+
+#topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    height: 1.5em;
+}
+
+#topnav a:hover {
+    background-color: #A8CCC9;
+    color: black;
+}
+
+#topnav > div {
+    float: right;
+}
+
+#topnav > div:hover {
+    background-color: #A8CCC9;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+#body {
+    padding-top: 45px;
+}
+
+/* the switch */
+#switch {
+    position: relative;
+    width: 40px;
+    height: 23px;
+    padding: 3px;
+    float: right;
+}
+
+#switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #B3D6C6;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: white;
+}
+
+input:checked+.slider:before {
+    transform: translateX(17px);
+}
+
+.slider.round {
+    border-radius: 25px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.wall {
+    display: none;
+    visibility: hidden;
+}
